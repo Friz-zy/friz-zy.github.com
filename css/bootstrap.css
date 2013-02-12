@@ -253,6 +253,113 @@ section#content {
 	box-shadow: 0 -5px 5px rgba(0,0,0,.2);
 }
 
+
+/*steal idea from http://netcribe.com .Frizzy*/
+.social{
+	/*border-radius*/
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius:0 5px 5px 0;
+	border-radius:0 5px 5px 0;
+	/*box-shadow*/
+	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.9);
+	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.9);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.9);
+	text-align: left;
+	font-size: 240%;
+	line-height: 27px;
+	overflow:hidden;
+	height:138px;
+	position:fixed;
+	left:0;
+	top:40%;
+	z-index:2;
+}
+.social a{
+	color: gray;
+	width:24px;
+	height:24px;
+	display:block;
+	padding:10px;
+}
+.social a span{
+	display:inline-block;
+	width:24px;
+	height:24px;
+}
+.linkedin{
+	background-color: #324b8a;
+	background-image:-webkit-linear-gradient(center bottom , #324b8a 0%, #4466a8 100%);
+	background-image:-moz-linear-gradient(center bottom , #324b8a 0%, #4466a8 100%);
+	background-image:-o-linear-gradient(center bottom , #324b8a 0%, #4466a8 100%);
+	background-image:-ms-linear-gradient(center bottom , #324b8a 0%, #4466a8 100%);
+	background-image:linear-gradient(center bottom , #324b8a 0%, #4466a8 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.16, #324b8a),
+		color-stop(0.58, #4466a8)
+	);
+	border:1px solid #273d6b;
+	border-left:none;
+	/*border-radius*/
+	-webkit-border-radius:0 5px 0 0;
+	-moz-border-radius:0 5px 0 0;
+	border-radius:0 5px 0 0;
+}
+.linkedin span{
+	background-position:0 0;
+}
+.twitter{
+	background-color: #0191ce;
+	background-image:-webkit-linear-gradient(center bottom , #0191ce 0%, #01afdb 100%);
+	background-image:-moz-linear-gradient(center bottom , #0191ce 0%, #01afdb 100%);
+	background-image:-o-linear-gradient(center bottom , #0191ce 0%, #01afdb 100%);
+	background-image:-ms-linear-gradient(center bottom , #0191ce 0%, #01afdb 100%);
+	background-image:linear-gradient(center bottom , #0191ce 0%, #01afdb 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.16, #0191ce),
+		color-stop(0.58, #01afdb)
+	);
+	border:1px solid #0084b0;
+	border-left:none;
+}
+.twitter span{
+	background-position:0 -34px;
+}
+.habrahabr{
+	background-color: #4d7597;
+	background-image:-webkit-linear-gradient(center bottom , #4d7597 0%, #436684 100%);
+	background-image:-moz-linear-gradient(center bottom , #4d7597 0%, #436684 100%);
+	background-image:-o-linear-gradient(center bottom , #4d7597 0%, #436684 100%);
+	background-image:-ms-linear-gradient(center bottom , #4d7597 0%, #436684 100%);
+	background-image:linear-gradient(center bottom , #4d7597 0%, #436684 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.16, #4d7597),
+		color-stop(0.58, #436684)
+	);
+
+	border:1px solid #36546e;
+	border-left:none;
+	/*border-radius*/
+	-webkit-border-radius:0 0 5px 0;
+	-moz-border-radius:0 0 5px 0;
+	border-radius:0 0 5px 0;
+}
+.habrahabr span{
+	background-position:0 -68px;
+}
+.linkedin:hover,
+.twitter:hover,
+.habrahabr:hover{
+	opacity:0.9;
+}
 /* --------------------------
 	Header
 ----------------------------- */
@@ -956,9 +1063,12 @@ abbr.initialism {
 }
 
 blockquote {
-  padding: 0 0 0 15px;
-  margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+/*Steal from http://docs.puppetlabs.com/files/stylesheets/style.css .Frizzy*/
+  position: relative;
+  padding: 1em 20px;
+  border: 3px solid #e0e0e0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 blockquote p {
